@@ -27,6 +27,18 @@ a:hover {
 	text-decoration: none;
 	color: #999;
 }
+ul.skillset {
+	padding-left: 0;
+}
+.skillset li {
+	display: inline;
+	text-decoration: none;
+	padding: 0 10px;
+	border-left: 1px solid gray;
+}
+.skillset li:first-child {
+	border-left: none;
+}
 
 /* ---------------------------------------------- /*
  * Transition elsements
@@ -744,8 +756,15 @@ textarea.form-control {
 	min-height: 100%;
 	max-width: 100%;
 	opacity: 0.8;
+	border: 1px solid gray;
 }
-
+figcaption h2 {
+	background-color: black;
+	padding: 10px 0;
+}
+figcaption a {
+	color: gray;
+}
 .grid figure figcaption {
 	padding: 2em;
 	color: #fff;
@@ -803,17 +822,17 @@ textarea.form-control {
 /*---------------*/
 
 figure.effect-bubba {
-	background: #9e5406;
+	background: #000;
 }
 
 figure.effect-bubba img {
-	opacity: 0.7;
+	opacity: 1;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
 
 figure.effect-bubba:hover img {
-	opacity: 0.4;
+	opacity: 0.3;
 }
 
 figure.effect-bubba figcaption::before,
@@ -844,7 +863,7 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba h2 {
-	padding-top: 10%;
+	padding-top: 5% 0%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,-20px,0);
@@ -853,7 +872,7 @@ figure.effect-bubba h2 {
 }
 
 figure.effect-bubba p {
-	padding: 20px 2.5em;
+	padding: 0px 1.5em;
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
@@ -968,4 +987,6 @@ figure.effect-bubba:hover p {
 	}
 
 }
+
+
 
