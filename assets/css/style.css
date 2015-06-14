@@ -39,6 +39,10 @@ ul.skillset {
 .skillset li:first-child {
 	border-left: none;
 }
+.about-img {
+	/*float: right;*/
+	width: 200px;
+}
 
 /* ---------------------------------------------- /*
  * Transition elsements
@@ -291,6 +295,8 @@ textarea.form-control {
 	font-family: Raleway, "Times New Roman", Times, sans-serif;
 	font-style: normal;
 	font-size: 18px;
+	overflow-wrap: break-word;
+	float: left;
 }
 
 .pfblock-line {
@@ -355,7 +361,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/cover.jpg);
+	background: url(../images/desktop.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -566,8 +572,8 @@ textarea.form-control {
 .navbar-custom .navbar-brand {
 	font-weight: 700;
 	font-size: 22px;
-    font-family: Lobster, cursive;
-}
+/*    font-family: Lobster, cursive;
+*/}
 
 .navbar-custom .dropdown-menu {
 	border: 0;
@@ -733,10 +739,6 @@ textarea.form-control {
 	text-align: center;
 }
 
-.grid h2{
-    font-size: 20px;
-}
-
 .grid figure {
 	position: relative;
 	float: left;
@@ -755,7 +757,7 @@ textarea.form-control {
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.8;
+	opacity: 1;
 	border: 1px solid gray;
 }
 figcaption h2 {
@@ -787,9 +789,6 @@ figcaption a {
 	width: 100%;
 	height: 100%;
 }
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
 .grid figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
@@ -832,7 +831,7 @@ figure.effect-bubba img {
 }
 
 figure.effect-bubba:hover img {
-	opacity: 0.3;
+	opacity: 0;
 }
 
 figure.effect-bubba figcaption::before,
@@ -894,99 +893,29 @@ figure.effect-bubba:hover p {
 	transform: translate3d(0,0,0);
 }
 
-/*-----------------------*/
-/***** Quote Rotator *****/
-/*-----------------------*/
-
-.cbp-qtrotator {
-	position: relative;
-	margin: 3em auto 0em auto;
-	max-width: 90%;
-	width: 90%;
-}
-
-.cbp-qtrotator .cbp-qtcontent {
-	position: absolute;
-	min-height: 200px;
-	border-top: 1px solid #f4f4f4;
-	border-bottom: 1px solid #f4f4f4;
-	padding: 2em 0;
-	top: 0;
-	z-index: 0;
-	opacity: 0;
-	width: 100%;
-}
-
-.no-js .cbp-qtrotator .cbp-qtcontent {
-	border-bottom: none;
-}
-
-.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
-.no-js .cbp-qtrotator .cbp-qtcontent {
-	position: relative; 
-	z-index: 100;
-	pointer-events: auto;
-	opacity: 1;
-}
-
-.cbp-qtrotator .cbp-qtcontent:before,
-.cbp-qtrotator .cbp-qtcontent:after {
-	content: " ";
-	display: table;
-}
-
-.cbp-qtrotator .cbp-qtcontent:after {
-	clear: both;
-}
-
-.cbp-qtprogress {
-	position: absolute;
-	background: #FF5252;
-	height: 1px;
-	width: 0%;
-	top: 0;
-	z-index: 1000;
-}
-
-.cbp-qtrotator blockquote {
-	margin: 0;
-	padding: 0;
-    border: 0;
-    font-size: 12px;
-}
-
-.cbp-qtrotator blockquote p {
-	font-size: 2em;
-	color: #888;
-	font-weight: 300;
-	margin: 0.4em 0 1em;
-}
-
-.cbp-qtrotator blockquote footer {
-	font-size: 1.2em;
-}
-
-.cbp-qtrotator blockquote footer:before {
-	content: '― ';
-}
-
-.cbp-qtrotator .cbp-qtcontent img {
-	float: right;
-	margin-left: 3em;
-}
-
-/* Example for media query */
-@media screen and (max-width: 30.6em) { 
-
-	.cbp-qtrotator {
-		font-size: 70%;
+/* MEDIA QUERIES */
+@media screen and (min-width: 1201px) {
+	.grid h2{
+	    font-size: 20px;
 	}
-
-	.cbp-qtrotator img {
-		width: 80px;
-	}
-
 }
-
+@media screen and (max-width: 1200px) { 
+	figcaption h2 {
+		font-size: 0.7em;	
+	}
+}
+@media screen and (max-width: 991px) { 
+	figcaption h2 {
+		font-size: 1em;	
+	}
+}
+@media screen and (max-width: 767px) { 
+	figcaption h2 {
+		font-size: 2em;	
+	}
+	.grid figure p {
+		font-size: 1.2em;
+	}
+}
 
 
