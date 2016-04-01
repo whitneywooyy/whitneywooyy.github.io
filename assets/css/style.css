@@ -40,8 +40,7 @@ ul.skillset {
 	border-left: none;
 }
 .about-img {
-	/*float: right;*/
-	width: 200px;
+	width: 600px;
 }
 
 /* ---------------------------------------------- /*
@@ -361,7 +360,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/desktop.jpg);
+	background: url(../images/cover2.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -895,27 +894,34 @@ figure.effect-bubba:hover p {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 1201px) {
-	.grid h2{
+	.grid h2 {
 	    font-size: 20px;
+	}
+	.grid figure p {
+		font-size: 1em;
 	}
 }
 @media screen and (max-width: 1200px) { 
 	figcaption h2 {
-		font-size: 0.7em;	
+		font-size: 1.5em;	
+	}
+	.grid figure p {
+		font-size: 1em;
 	}
 }
 @media screen and (max-width: 991px) { 
 	figcaption h2 {
 		font-size: 1em;	
 	}
+	.grid figure p {
+		font-size: 0.7em;
+	}
 }
 @media screen and (max-width: 767px) { 
 	figcaption h2 {
-		font-size: 2em;	
+		font-size: 1.5em;	
 	}
 	.grid figure p {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 }
-
-
